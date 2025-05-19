@@ -1,0 +1,414 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    border-bottom: 2px solid #95006c;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .menu-btn {
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .menu-btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0 80px;
+    background: linear-gradient(to right, #3c2c20, #d2b99e);
+  }
+  
+  .hero-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .hero-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-text button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cupcakes-section {
+    background-color: #b8aa9d;
+    color: #000;
+    padding: 60px 40px;
+  }
+  
+  .cupcakes-section h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #3e3e3e;
+    display: inline-block;
+  }
+  
+  .cupcake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .cupcake-card {
+    background: #f8f1ea;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .cupcake-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .cupcake-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .cupcake-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+  }
+  
+  .cupcake-card p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .gallery-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 40px 40px;
+    text-align: center;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .gallery-container img {
+    width: 220px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-section hr {
+    border: none;
+    border-top: 1px solid #888;
+    margin: 40px 0 20px;
+  }
+  
+  .gallery-footer {
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+  }
+  
+  .site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 40px 20px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-newsletter {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .footer-newsletter h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-newsletter input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .footer-newsletter .checkbox-label {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-newsletter button {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
+  }
+  
+  .footer-newsletter button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Contact Info */
+  .footer-contact {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-contact p {
+    margin: 6px 0;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f8c8dc;
+  }
+  
+  /* Policy Links */
+  .footer-links {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #f2d1e3;
+  }
+  
+  /* Copyright */
+  .footer-copy {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: #aaa;
+  }
+  
+  .footer-copy a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    height: 100vh;
+    background: url('image/cupcake.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    color: #fff;
+    z-index: 1;
+  }
+  
+  
+  .hero-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;
+    padding: 60px 80px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Optional: Fade In Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .cupcake-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding: 20px 0;
+    scrollbar-width: none;
+  }
+  .cupcake-slider::-webkit-scrollbar {
+    display: none;
+  }  
+  
+  .cupcake-card {
+    flex: 0 0 auto;
+    width: 220px;
+    background: #f8f1ea;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .cupcake-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cupcake-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BiteMeSweetly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">bitemesweetly</div>
+    <button class="menu-btn">Menu</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-overlay">
+    <div class="hero-content">
+      <h1>SAVOR THE SWEETNESS</h1>
+      <p>Delicious Cupcakes in Makassar</p>
+      <button>Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Our Cupcakes Section -->
+  <section class="cupcakes-section" id="cupcakes">
+    <h2 data-aos="fade-up">OUR CUPCAKES</h2>
+  
+    <div class="cupcake-slider" id="cupcakeSlider">
+      <div class="cupcake-card">
+        <img src="image/cupcake1.jpg" alt="Monthly Cupcake Box" />
+        <h3>Monthly Cupcake Box</h3>
+        <p>Rp50,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake2.jpg" alt="Custom Flavor Subscription" />
+        <h3>Custom Flavor Subscription</h3>
+        <p>Rp55,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake3.jpg" alt="Family Pack Subscription" />
+        <h3>Family Pack Subscription</h3>
+        <p>Rp70,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake4.jpg" alt="Fun Animal Toppers" />
+        <h3>Fun Animal Toppers</h3>
+        <p>Rp12,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake5.jpg" alt="Classic Chocolate Delight" />
+        <h3>Classic Chocolate Delight</h3>
+        <p>Rp25,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake6.jpg" alt="Chocolate Hazelnut Bliss" />
+        <h3>Chocolate Hazelnut Bliss</h3>
+        <p>Rp20,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake7.jpg" alt="Decadent Dark Chocolate" />
+        <h3>Decadent Dark Chocolate</h3>
+        <p>Rp30,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake8.jpg" alt="Birthday Celebration Toppers" />
+        <h3>Birthday Celebration Toppers</h3>
+        <p>Rp25,00</p>
+      </div>
+      <div class="cupcake-card">
+        <img src="image/cupcake9.jpg" alt="Elegant Floral Toppers" />
+        <h3>Elegant Floral Toppers</h3>
+        <p>Rp30,00</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="gallery-container">
+    <img src="image/cupcake6.jpg" alt="Dessert 1" data-aos="zoom-in" data-aos-delay="100" />
+    <img src="image/cupcake7.jpg" alt="Dessert 2" data-aos="zoom-in" data-aos-delay="200" />
+    <img src="image/cupcake8.jpg" alt="Dessert 3" data-aos="zoom-in" data-aos-delay="300" />
+    <img src="image/cupcake9.jpg" alt="Dessert 4" data-aos="zoom-in" data-aos-delay="400" />
+    <img src="image/cupcake1.jpg" alt="Dessert 5" data-aos="zoom-in" data-aos-delay="500" />
+  </div>
+  <hr />
+  <div class="gallery-footer">bitemesweetly</div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer" data-aos="fade-up">
+  <div class="footer-grid">
+
+    <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="100">
+      <h2>Satisfy Your Sweet Cravings</h2>
+      <form>
+        <label for="email">Email *</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <label class="checkbox-label">
+          <input type="checkbox" required />
+          Yes, subscribe me to your newsletter. *
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
+      <p>123-456-7890</p>
+      <p>info@mysite.com</p>
+      <p>Makassar, Makassar City,<br>South Sulawesi, Indonesia</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links" data-aos="fade-up" data-aos-delay="300">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Accessibility Statement</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+    </div>
+
+  </div>
+
+  <hr />
+  <p class="footer-copy">© 2035 by bitemesweetly. Powered and secured by <a href="#">Wix</a></p>
+</footer>
+
+
+</body>
+</html>
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+</script>
+<script>
+  window.addEventListener('load', () => {
+    const img = document.getElementById('heroImg');
+    const text = document.getElementById('heroText');
+
+    img.onload = () => {
+      text.classList.add('visible');
+    };
+
+    // Untuk antisipasi caching (img sudah dimuat sebelumnya)
+    if (img.complete) {
+      text.classList.add('visible');
+    }
+  });
+</script>
+
+<script>
+  const slider = document.getElementById('cupcakeSlider');
+
+  function autoScrollSlider() {
+    // Geser sedikit demi sedikit
+    slider.scrollBy({ left: 2, behavior: 'smooth' });
+
+    // Cek jika sudah sampai akhir
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 2) {
+      // Kembali ke awal setelah delay singkat
+      setTimeout(() => {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      }, 3000);
+    }
+  }
+
+  // Auto-scroll terus menerus
+  setInterval(autoScrollSlider, 20); // makin kecil = makin cepat
+</script>
+
